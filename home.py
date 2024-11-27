@@ -35,7 +35,6 @@ if response.status_code == 200 :
     st.dataframe(df)
 else :
     st.error(f'Failed to fetch data : {response.status_code}')
-df.to_csv('a.csv')
 df['city_count']=df['city_count'].astype(int)
 df_sorted = df.sort_values('city_count', ascending = False).head(10)
 # st.dataframe(df_sorted)
