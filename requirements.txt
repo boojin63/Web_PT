@@ -1,6 +1,6 @@
 streamlit
 requests
 pandas
-xml
+xml.etree.cElementTree
 matplotlib
 seaborn
